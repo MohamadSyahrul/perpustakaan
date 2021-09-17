@@ -7,17 +7,19 @@
     <title>
         @yield('title')
     </title>
+    <link href="{{asset('template/img/logoview.png')}}" rel="shortcut icon">
+    
 </head>
 
 <body>
     <header class="header" id=#home>
-        @include('layout.headerFrontend')
+        @include('layout.frontend.headerFrontend')
     </header>
     
     @yield('content')
 
     <footer>
-       @include('layout.footerFrontend')
+       @include('layout.frontend.footerFrontend')
     </footer>
 
     <!--javascript-->
