@@ -17,8 +17,8 @@
             <h1>Perpustakaan SMA Negeri 1 Banyuwangi</h1>
             <p>Nikmati beberapa fitur yang disediakan pada website ini. mulailah dengan login terlebih dahulu 👋</p>
             <div class="buttons">
-                <a class="button1" href="courses.html" title="Login">Login</a>
-                <a class="button2" href="javascript:;" title="Register">Register</a>
+                <a class="button1" href="{{route('login')}}" title="Login">Login</a>
+                <a class="button2" href="{{route('register')}}" title="Register">Register</a>
             </div>
         </div>
     </div>
