@@ -9,116 +9,145 @@
         <h5>Home / Kegiatan</h5>
     </div>
 </section>
-<section class="features">
+<section class="blog2">
     <div>
-        <div class="text_holder">
-            <h2>Awesome<br>Feature</h2>
-            <p>Set have great you male grass yielding an yielding first their you're have called the abundantly
-                fruit were man</p>
-            <a class="button1" href="javascript:;" title="Read more">read more</a>
+        <div class="col1">
+            <ul>
+                <li>
+                    <div class="image_holder"><img src="{{asset('template/img/single_blog_1.png')}}"></div>
+                    <div class="text_holder">
+                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
+                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image_holder"><img src="{{asset('template/img/single_blog_2.png')}}"></div>
+                    <div class="text_holder">
+                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
+                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image_holder"><img src="{{asset('template/img/single_blog_3.png')}}"></div>
+                    <div class="text_holder">
+                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
+                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image_holder"><img src="{{asset('template/img/single_blog_4.png')}}"></div>
+                    <div class="text_holder">
+                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
+                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="image_holder"><img src="{{asset('template/img/single_blog_5.png')}}"></div>
+                    <div class="text_holder">
+                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
+                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="list">
-            <div><i class="far fa-check-square"></i></div>
-            <h3>Better Future</h3>
-            <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have
-                great you male</p>
-        </div>
-        <div class="list">
-            <div><i class="fas fa-user-tie"></i></div>
-            <h3>Qualified Trainers</h3>
-            <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have
-                great you male</p>
-        </div>
-        <div class="list">
-            <div><i class="far fa-lightbulb"></i></div>
-            <h3>Job Oppurtunity</h3>
-            <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have
-                great you male</p>
-        </div>
-    </div>
-</section>
-<section class="about">
-    <div>
-        <div class="image_holder"><img src="{{asset('template/img/learning_img.png')}}"></div>
-        <div>
-            <h5>About us</h5>
-            <h2>Learning with Love and Laughter</h2>
-            <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast greater
-                grass signs abundantly have greater also days years under brought moveth.</p>
-            <div><i class="far fa-edit"></i>
-                <p>Him lights given i heaven second yielding seas gathered wear.</p>
+        {{-- <div class="col2">
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search Keyword">
+                    <a href="javascript:;" title="Search"><i class="fas fa-search"></i></a>
+                </form>
+                <a href="javascript:;" title="Search">Search</a>
             </div>
-            <div><i class="fas fa-pencil-ruler"></i>
-                <p>Fly female them whales fly them day deep given night.</p>
-            </div>
-            <a class="button1" href="javascript:;" title="Read more">read more</a>
-        </div>
-    </div>
-</section>
-<section class="info">
-    <div>
-        <ul>
-            <li>
-                <h4>1024</h4>
-                <p>All Teachers</p>
-            </li>
-            <li>
-                <h4>960</h4>
-                <p>All Students</p>
-            </li>
-            <li>
-                <h4>1019</h4>
-                <p>Online Students</p>
-            </li>
-            <li>
-                <h4>819</h4>
-                <p>Offline Students</p>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="testimonials">
-    <div>
-        <h5>TESIMONIALS</h5>
-        <h4>Happy Students</h4>
-        <div class="container">
-            <div class="student">
-                <div class="text_holder">
-                    <p>Behold place was a multiply creeping creature his domin to thiren open void hath herb divided
-                        divide creepeth living shall i call beginning third sea itself set</p>
-                    <h5>Michael Hashale</h5>
-                    <h6>Sr Web designer</h6>
-                </div>
-                <div class="image_holder">
-                    <img src="{{asset('template/img/testimonial_img_1.png')}}">
-                </div>
-            </div>
-            <div class="student">
-                <div class="text_holder">
-                    <p>Behold place was a multiply creeping creature his domin to thiren open void hath herb divided
-                        divide creepeth living shall i call beginning third sea itself set</p>
-                    <h5>Michael Hashale</h5>
-                    <h6>Sr Web designer</h6>
-                </div>
-                <div class="image_holder">
-                    <img src="{{asset('template/img/testimonial_img_2.png')}}">
-                </div>
-            </div>
-            <div class="student">
-                <div class="text_holder">
-                    <p>Behold place was a multiply creeping creature his domin to thiren open void hath herb divided
-                        divide creepeth living shall i call beginning third sea itself set</p>
-                    <h5>Michael Hashale</h5>
-                    <h6>Sr Web designer</h6>
-                </div>
-                <div class="image_holder">
-                    <img src="{{asset('template/img/testimonial_img_3.png')}}">
-                </div>
-            </div>
-        </div>
-        <div class="btn_container">
-            <div><a href="javascript:;" class="prevBtn"><i class="fas fa-angle-double-left"></i></a></div>
-            <div><a href="javascript:;" class="nextBtn"><i class="fas fa-angle-double-right"></i></a></div>
+            <div class="category">
+                <h4>Category</h4>
+                <ul>
+                    <li><a href="javascript:;" title="Food">Restaurant food (21)</a></li>
+                    <li><a href="javascript:;" title="Travel">Travel news (17)</a></li>
+                    <li><a href="javascript:;" title="Tech">Modern technology (8)</a></li>
+                    <li><a href="javascript:;" title="Product">Product (29)</a></li>
+                    <li><a href="javascript:;" title="Inspiration">Inspiration (37)</a></li>
+                    <li><a href="javascript:;" title="Health">Health Care (19)</a></li>
+                </ul>
+            </div> --}}
+            {{-- <div class="posts">
+                <h4>Recent Post</h4>
+                <ul>
+                    <li>
+                        <a href="single_blog.html" title="Post">
+                            <div><img src="{{asset('template/img/post_1.png')}}"></div>
+                            <div>
+                                <h6>From life was you fish...</h6>
+                                <p>January 12, 2019</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="single_blog.html" title="Post">
+                            <div><img src="{{asset('template/img/post_2.png')}}"></div>
+                            <div>
+                                <h6>The Amazing Hubble</h6>
+                                <p>A Week ago</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="single_blog.html" title="Post">
+                            <div><img src="{{asset('template/img/post_3.png')}}"></div>
+                            <div>
+                                <h6>Astronomy Or Astrology</h6>
+                                <p>2 days ago</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="single_blog.html" title="Post">
+                            <div><img src="{{asset('template/img/post_4.png')}}"></div>
+                            <div>
+                                <h6>Asteroids telescope</h6>
+                                <p>4 Hours ago</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> --}}
+            {{-- <div class="tags">
+                <h4>Tag Clouds</h4>
+                <a href="javascript:;" title="project">project</a>
+                <a href="javascript:;" title="love">love</a>
+                <a href="javascript:;" title="technology">technology</a>
+                <a href="javascript:;" title="travel">travel</a>
+                <a href="javascript:;" title="reastaurant">restaurant</a>
+                <a href="javascript:;" title="lifestyle">lifestyle</a>
+                <a href="javascript:;" title="design">design</a>
+                <a href="javascript:;" title="illustration">illustration</a>
+            </div> --}}
+            {{-- <div class="instagram">
+                <h4>Instagram Feeds</h4>
+                <ul>
+                    <li><a href="javascript:;" title="Post1"><img src="{{asset('template/img/post_5.png')}}"></a></li>
+                    <li><a href="javascript:;" title="Post2"><img src="{{asset('template/img/post_6.png')}}"></a></li>
+                    <li><a href="javascript:;" title="Post3"><img src="{{asset('template/img/post_7.png')}}"></a></li>
+                    <li><a href="javascript:;" title="Post4"><img src="{{asset('template/img/post_8.png')}}"></a></li>
+                    <li><a href="javascript:;" title="Post5"><img src="{{asset('template/img/post_9.png')}}"></a></li>
+                    <li><a href="javascript:;" title="Post6"><img src="{{asset('template/img/post_10.png')}}"></a></li>
+                </ul>
+            </div> --}}
+            {{-- <div class="subscribe">
+                <form>
+                    <input type="text" placeholder="Enter email">
+                    <a href="javascript:;" title="Subscribe ">Subscribe</a>
+                </form>
+            </div> --}}
         </div>
     </div>
 </section>
