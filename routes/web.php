@@ -26,4 +26,8 @@ Route::get('/kegiatan', function () {
 });
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function () {
+    return view('pages.admin.dashboard');
+})->name('home');
+
+Route::resource('management-anggota', 'Admin\UserController');
