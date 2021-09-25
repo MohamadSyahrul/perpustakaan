@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Model\Tentang;
 use Illuminate\Http\Request;
 
 class TentangController extends Controller
@@ -14,7 +15,8 @@ class TentangController extends Controller
      */
     public function index()
     {
-        //
+        $about = Tentang::all();
+        return view('pages.admin.tentang', compact('about'));
     }
 
     /**
@@ -69,7 +71,12 @@ class TentangController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $about = Tentang::findOrFail($id);
+        $about->title = $request->title;
+        $about->deskripsi = $request->deskripsi;
+        $about->update();
+        return redirect()->route('management-tentang.index')->with('update', 'Data berhasil diupdate');
+
     }
 
     /**

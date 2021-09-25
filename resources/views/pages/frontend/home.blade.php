@@ -27,11 +27,12 @@
     <div>
         <div class="image_holder"><img src="{{asset('template/img/learning_img.png')}}"></div>
         <div>
+            @foreach ($about as $item)
             <h5>Tentang</h5>
-            <h2>Learning with Love and Laughter</h2>
-            <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast greater
-                grass signs abundantly have greater also days years under brought moveth.</p>
-            <a class="button1" href="javascript:;" title="Read more">read more</a>
+            <h2>{{$item->title}}</h2>
+            <p>{{$item->deskripsi}}</p>
+            @endforeach
+            <a class="button1" href="{{url('tentang')}}" title="Read more">Read more</a>
         </div>
     </div>
 </section>

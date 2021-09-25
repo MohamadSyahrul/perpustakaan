@@ -1,5 +1,6 @@
 <?php
 
+use App\Model\Tentang;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -16,10 +17,17 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('pages.frontend.home');
+    $about = Tentang::all();
+
+    return view('pages.frontend.home',[
+        'about'=>$about
+    ]);
 });
 Route::get('/tentang', function () {
-    return view('pages.frontend.tentang');
+    $about = Tentang::all();
+    return view('pages.frontend.tentang',[
+        'about'=>$about
+    ]);
 });
 Route::get('/kegiatan', function () {
     return view('pages.frontend.kegiatan');
@@ -31,3 +39,5 @@ Route::get('/home', function () {
 })->name('home');
 
 Route::resource('management-anggota', 'Admin\UserController');
+Route::resource('management-tentang', 'Admin\TentangController');
+
