@@ -58,6 +58,13 @@ Route::prefix('admin')->middleware([Admin::class, 'auth'])->group(function () {
     Route::resource('management-tentang', 'Admin\TentangController');
     Route::resource('management-kegiatan', 'Admin\KegiatanController');
 
+    Route::resource('kategori', 'Admin\KategoriController');
+    Route::resource('rak', 'Admin\RakController');
+    Route::resource('data-buku', 'Admin\BukuController');
+
+
+
+
 });
 
 Route::prefix('siswa')->middleware([Siswa::class, 'auth'])->group(function () {

@@ -15,6 +15,17 @@
 
         <li class="menu-title">Buku</li><!-- /.menu-title -->
         <li>
+            <a href="{{route('data-buku.index')}}"> <i class="menu-icon ti-agenda"></i>Data Buku</a>
+        </li>
+        <li>
+            <a href="{{route('kategori.index')}}"> <i class="menu-icon  ti-ink-pen"></i>Kategori</a>
+        </li>
+        <li>
+            <a href="{{route('rak.index')}}"> <i class="menu-icon ti-view-list"></i>Rak</a>
+        </li>
+
+        <li class="menu-title">Transaksi</li><!-- /.menu-title -->
+        <li>
             <a href="widgets.html"> <i class="menu-icon ti-book"></i>Peminjaman Buku </a>
         </li>
         <li>
