@@ -8,7 +8,7 @@ Tentang
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    @if (session()->get('update'))
+                    @if (session()->get('update')) {{-- ini berfungsi untuk memberitahu bahwa data berhasil di update --}}
                     <div class="alert alert-warning" role="alert">
                         {{ session()->get('update') }}
                     </div>
@@ -25,7 +25,7 @@ Tentang
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($about as $item)
+                            @foreach ($about as $item) {{-- ini digunakan untuk melooping data dari database --}}
                             <tr>
                                 <td>{{$item->title}}</td>
                                 <td>{!! $item->deskripsi !!}</td>

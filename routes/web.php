@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Middleware\Admin;
+use App\Http\Middleware\Siswa;
+use App\Model\Kegiatan;
 use App\Model\Tentang;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +21,12 @@ Auth::routes();
 
 Route::get('/', function () {
     $about = Tentang::all();
+    $kgt = Kegiatan::paginate(3);
+
 
     return view('pages.frontend.home',[
-        'about'=>$about
+        'about'=>$about,
+        'kgt'=>$kgt,
     ]);
 });
 Route::get('/tentang', function () {
@@ -30,14 +36,30 @@ Route::get('/tentang', function () {
     ]);
 });
 Route::get('/kegiatan', function () {
-    return view('pages.frontend.kegiatan');
+    $kgt = Kegiatan::all();
+
+
+    return view('pages.frontend.kegiatan',[
+        'kgt'=>$kgt,
+    ]);
+});
+
+Route::middleware('auth')->group(function () {   
+    Route::get('/home', function () {
+        return view('pages.admin.dashboard');
+    })->name('home');
 });
 
 
-Route::get('/home', function () {
-    return view('pages.admin.dashboard');
-})->name('home');
+Route::prefix('admin')->middleware([Admin::class, 'auth'])->group(function () {
 
-Route::resource('management-anggota', 'Admin\UserController');
-Route::resource('management-tentang', 'Admin\TentangController');
 
+    Route::resource('management-anggota', 'Admin\UserController');
+    Route::resource('management-tentang', 'Admin\TentangController');
+    Route::resource('management-kegiatan', 'Admin\KegiatanController');
+
+});
+
+Route::prefix('siswa')->middleware([Siswa::class, 'auth'])->group(function () {
+
+});

@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('template/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('template/css/all.min.css')}}">
     <title>
-        @yield('title')
+        @yield('title') {{-- yield digunakan untuk memberikan tanda kepada section, agar bisa dipanggil oleh banyak section --}}
     </title>
     <link href="{{asset('template/img/logoview.png')}}" rel="shortcut icon">
     
@@ -13,13 +13,13 @@
 
 <body>
     <header class="header" id=#home>
-        @include('layout.frontend.headerFrontend')
+        @include('layout.frontend.headerFrontend') {{-- include untuk memisahkan layout agar rapi dan mudah dipahami --}}
     </header>
     
-    @yield('content')
+    @yield('content') {{-- yield digunakan untuk memberikan tanda kepada section, agar bisa dipanggil oleh banyak section --}}
 
     <footer>
-       @include('layout.frontend.footerFrontend')
+       @include('layout.frontend.footerFrontend') {{-- include untuk memisahkan layout agar rapi dan mudah dipahami --}}
     </footer>
 
     <!--javascript-->

@@ -12,53 +12,22 @@
 <section class="blog2">
     <div>
         <div class="col1">
+            @foreach ($kgt as $item)
+                
             <ul>
                 <li>
-                    <div class="image_holder"><img src="{{asset('template/img/single_blog_1.png')}}"></div>
+                    <div class="image_holder"><img src="{{asset('img/'. $item->foto)}}"></div>
                     <div class="text_holder">
-                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
-                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
-                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="image_holder"><img src="{{asset('template/img/single_blog_2.png')}}"></div>
-                    <div class="text_holder">
-                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
-                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
-                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="image_holder"><img src="{{asset('template/img/single_blog_3.png')}}"></div>
-                    <div class="text_holder">
-                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
-                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
-                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="image_holder"><img src="{{asset('template/img/single_blog_4.png')}}"></div>
-                    <div class="text_holder">
-                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
-                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
-                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="image_holder"><img src="{{asset('template/img/single_blog_5.png')}}"></div>
-                    <div class="text_holder">
-                        <div class="tag"><a href="javascript:;" title="Blog"><span>15</span>Jan</a></div>
-                        <div class="heading"><a href="single_blog.html" title="Blog">Google inks pact for new 35-storey office</a></div>
-                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                        <div class="tags"><a href="javacript:;" title="tag"><i class="fas fa-user"></i> Travel, Lifestyle</a><a href="javascript:;" title="Comments"><i class="fas fa-comments"></i> 03 Comments</a></div>
+                        <div class="tag"><a href="javascript:;" title="Blog"><span>{{ date('d', strtotime($item->tanggal)) }}</span>{{ substr(date('F', strtotime($item->tanggal)),0,3) }}</a></div>
+                        <div class="heading"><a href="single_blog.html" title="Blog">{{$item->title}}</a></div>
+                        <p>
+                            {!!$item->deskripsi!!}
+                        </p>
+                        
                     </div>
                 </li>
             </ul>
+            @endforeach
         </div>
         {{-- <div class="col2">
             <div class="search">

@@ -1,8 +1,8 @@
-@extends('layout.frontend.masterFrontend')
-@section('title')
+@extends('layout.frontend.masterFrontend') {{-- Extend digunakan untuk memberitahukan tempat dari yield  --}}
+@section('title') {{-- Section digunakan untuk memanggil yield dengan value/nilai title --}}
     Home Perpustakaan
 @endsection
-@section('content')
+@section('content') {{-- Section digunakan untuk memanggil yield dengan value/nilai content --}}
 <section class="banner">
     <div class="shape">
         <svg>
@@ -63,21 +63,22 @@
     <div>
         <h4>Kegiatan</h4>
         <div class="container">
+            @foreach ($kgt as $item)
             <div>
-                <div class="image_holder"><img src="{{asset('template/img/blog_1.png')}}"></div>
+                <div class="image_holder"><img src="{{asset('img/'. $item->foto)}}"></div>
                 <div class="text_holder">
                     <div class="heading">
-                        <a href="course_details.html" title="Design">Design</a>
+                        <a href="course_details.html" title="Design">{{$item->tanggal}}</a>
                     </div>
                     <div class="description">
-                        <a href="course_details.html" title="Dry Beginning Sea Over Tree">Dry Beginning Sea Over
-                            Tree</a>
-                        <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                        <a href="course_details.html" title="Dry Beginning Sea Over Tree">{{$item->title}}</a>
+                        <p>{!!$item->deskripsi!!}</p>
                     </div>
                    
                 </div>
             </div>
-            <div>
+            @endforeach
+            {{-- <div>
                 <div class="image_holder"><img src="{{asset('template/img/blog_2.png')}}"></div>
                 <div class="text_holder">
                     <div class="heading">
@@ -103,7 +104,7 @@
                         <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
