@@ -147,14 +147,13 @@ class BukuController extends Controller
         $delete = Book::findOrFail($id);
 
         $file = public_path('/img/').$delete->sampul;
-        //cek jika ada gambar
+
         if (file_exists($file)){
-            //maka delete file diforder public/img
             @unlink($file);
         }
-        //delete data didatabase
         $delete->delete();
         // dd($delete);
+        dd($delete);
 
         return redirect()->route('data-buku.index');
     }

@@ -326,16 +326,20 @@ Data Buku
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </td>
+
                                 <td>
-                                    
-                                    <form style="display: inline;" action="{{route('data-buku.destroy', $item->id)}}" method="post" onsubmit="return confirm('Yakin hapus data ?')" >
+                                    <a href="{{route('data-buku.destroy', $item->id)}}" class="btn btn-danger btn-sm"
+                                        onclick="event.preventDefault();
+                                    document.getElementById('delete').submit();"><i class="fa fa-trash"></i>&nbsp;
+                                        Delete
+                                    </a>
+
+                                    <form id="delete" style="display: inline;"
+                                        action="{{route('data-buku.destroy', $item->id)}}" method="post"
+                                        enctype="multipart/form-data" onsubmit="return confirm('Yakin hapus data ?')">
                                         @method('delete')
                                         @csrf
-                                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i>&nbsp;
-                                        Delete</button>
                                     </form>
                                 </td>
                             </tr>

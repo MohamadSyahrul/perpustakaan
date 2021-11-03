@@ -62,6 +62,7 @@ Route::prefix('admin')->middleware([Admin::class, 'auth'])->group(function () {
     Route::resource('rak', 'Admin\RakController');
     Route::resource('data-buku', 'Admin\BukuController');
 
+    Route::resource('peminjaman', 'Admin\PinjamController');
 
 
 

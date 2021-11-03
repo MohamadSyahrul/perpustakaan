@@ -26,7 +26,7 @@
 
         <li class="menu-title">Transaksi</li><!-- /.menu-title -->
         <li>
-            <a href="widgets.html"> <i class="menu-icon ti-book"></i>Peminjaman Buku </a>
+            <a href="{{route('peminjaman.index')}}"> <i class="menu-icon ti-book"></i>Peminjaman Buku </a>
         </li>
         <li>
             <a href="widgets.html"> <i class="menu-icon ti-bookmark-alt"></i>Pengembalian Buku </a>
