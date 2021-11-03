@@ -39,7 +39,7 @@ Kategori
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->pinjam }}</td>
-                                    <td>{{ $item->anggota->id_user }}</td>
+                                    <td>{{ $item->anggota->name }}</td>
                                     <td>{{ $item->tgl_pinjam }}</td>
                                     <td class="text-success">{{ $item->status }}</td>
                                     <td></td>

@@ -17,7 +17,7 @@ class PinjamController extends Controller
      */
     public function index()
     {
-        $pinjam = Pinjam::with('anggota')->get();
+        $pinjam = Pinjam::with(['anggota'])->get();
         return view('pages.admin.transaksi.pinjam', compact('pinjam'));
     }
 
