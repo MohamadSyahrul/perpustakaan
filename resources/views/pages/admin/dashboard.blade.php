@@ -12,12 +12,12 @@ Dashboard
                 <div class="card-body">
                     <div class="stat-widget-five">
                         <div class="stat-icon dib flat-color-1">
-                            <i class="pe-7s-cash"></i>
+                            <i class="pe-7s-notebook"></i>
                         </div>
                         <div class="stat-content">
                             <div class="text-left dib">
-                                <div class="stat-text">$<span class="count">23569</span></div>
-                                <div class="stat-heading">Revenue</div>
+                                <div class="stat-text"><span class="count">{{$buku}}</span></div>
+                                <div class="stat-heading">Total Buku</div>
                             </div>
                         </div>
                     </div>
@@ -30,12 +30,12 @@ Dashboard
                 <div class="card-body">
                     <div class="stat-widget-five">
                         <div class="stat-icon dib flat-color-2">
-                            <i class="pe-7s-cart"></i>
+                            <i class="pe-7s-ribbon"></i>
                         </div>
                         <div class="stat-content">
                             <div class="text-left dib">
-                                <div class="stat-text"><span class="count">3435</span></div>
-                                <div class="stat-heading">Sales</div>
+                                <div class="stat-text"><span class="count">{{$peminjam}}</span></div>
+                                <div class="stat-heading">Total Peminjaman</div>
                             </div>
                         </div>
                     </div>
@@ -48,12 +48,12 @@ Dashboard
                 <div class="card-body">
                     <div class="stat-widget-five">
                         <div class="stat-icon dib flat-color-3">
-                            <i class="pe-7s-browser"></i>
+                            <i class="pe-7s-back-2"></i>
                         </div>
                         <div class="stat-content">
                             <div class="text-left dib">
-                                <div class="stat-text"><span class="count">349</span></div>
-                                <div class="stat-heading">Templates</div>
+                                <div class="stat-text"><span class="count">{{$pengembalian}}</span></div>
+                                <div class="stat-heading">Total Kategori Buku</div>
                             </div>
                         </div>
                     </div>
@@ -70,8 +70,8 @@ Dashboard
                         </div>
                         <div class="stat-content">
                             <div class="text-left dib">
-                                <div class="stat-text"><span class="count">2986</span></div>
-                                <div class="stat-heading">Clients</div>
+                                <div class="stat-text"><span class="count">{{$user}}</span></div>
+                                <div class="stat-heading">Total Pengguna</div>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,13 @@
 <?php
 
+use App\Book;
 use App\Http\Middleware\Admin;
 use App\Http\Middleware\Siswa;
+use App\Kategori;
 use App\Model\Kegiatan;
 use App\Model\Tentang;
+use App\Pinjam;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -46,7 +50,18 @@ Route::get('/kegiatan', function () {
 
 Route::middleware('auth')->group(function () {   
     Route::get('/home', function () {
-        return view('pages.admin.dashboard');
+        $buku = Book::count();
+        $peminjam = Pinjam::count();
+        $pengembalian = Pinjam::where("status", "Sudah Dikembalikan")->count();
+        $user = User::count();
+
+        return view('pages.admin.dashboard',[
+            'buku' => $buku,
+            'peminjam' => $peminjam,
+            'pengembalian' => $pengembalian,
+            'user' => $user,
+
+        ]);
     })->name('home');
 });
 
