@@ -14,7 +14,7 @@
         <div class="image_holder"><img src="{{asset('template/img/banner_img.png')}}"></div>
         <div class="text_holder">
             <h5>Pinjam dan Baca Buku di</h5>
-            <h1>Perpustakaan SMA Negeri 1 Banyuwangi</h1>
+            <h1>Perpustakaan SMA Negeri 1 Tegaldlimo</h1>
             <p>Nikmati beberapa fitur yang disediakan pada website ini. mulailah dengan login terlebih dahulu 👋</p>
             <div class="buttons">
                 <a class="button1" href="{{route('login')}}" title="Login">Login</a>

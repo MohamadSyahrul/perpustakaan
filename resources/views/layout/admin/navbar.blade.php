@@ -29,10 +29,7 @@
             <a href="{{route('peminjaman.index')}}"> <i class="menu-icon ti-book"></i>Peminjaman Buku </a>
         </li>
         <li>
-            <a href="widgets.html"> <i class="menu-icon ti-bookmark-alt"></i>Pengembalian Buku </a>
-        </li>
-        <li>
-            <a href="widgets.html"> <i class="menu-icon ti-clipboard"></i>Laporan Peminjaman </a>
+            <a href="{{route('pengembalian.index')}}"> <i class="menu-icon ti-bookmark-alt"></i>Pengembalian Buku </a>
         </li>
 
         <li class="menu-title">Anggota</li><!-- /.menu-title -->

@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Book;
 use App\Http\Controllers\Controller;
 use App\Pinjam;
-use App\User;
 use Illuminate\Http\Request;
 
-class PinjamController extends Controller
+class PengembalianController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +15,8 @@ class PinjamController extends Controller
      */
     public function index()
     {
-        $pinjam = Pinjam::with(['anggota'])->get();
-        return view('pages.admin.transaksi.pinjam', compact('pinjam'));
+        $pengembalian = Pinjam::where("status", "Sudah Dikembalikan")->get();
+        return view("pages.admin.transaksi.pengembalian",compact("pengembalian"));
     }
 
     /**
@@ -28,10 +26,7 @@ class PinjamController extends Controller
      */
     public function create()
     {
-        $anggota = User::all();
-        $buku = Book::all();
-        return view('pages.admin.transaksi.createPinjam', compact('anggota','buku'));
-        
+        //
     }
 
     /**
@@ -42,15 +37,7 @@ class PinjamController extends Controller
      */
     public function store(Request $request)
     {
-        $pinjam = $request->all();
-        $pinjam['pinjam'] = generateKode($request->tgl_pinjam);
-        $pinjam['tgl_pinjam'] = dateFormat($request->tgl_pinjam);
-        $pinjam['status'] = "Dipinjam";
-
-
-        Pinjam::create($pinjam);
-
-        return redirect()->route('peminjaman.index');
+        //
     }
 
     /**
@@ -95,16 +82,6 @@ class PinjamController extends Controller
      */
     public function destroy($id)
     {
-        $pinjam = Pinjam::where("id", $id);
-        $pinjam->delete();
-        return redirect()->route('peminjaman.index');
-
-    }
-
-    public function ubah_status($id)
-    {
-        $item = Pinjam::where("id", $id)->update(['status' => "Sudah Dikembalikan"]);
-            return redirect()->route('peminjaman.index');
-
+        //
     }
 }

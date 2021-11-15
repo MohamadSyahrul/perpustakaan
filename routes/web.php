@@ -63,6 +63,11 @@ Route::prefix('admin')->middleware([Admin::class, 'auth'])->group(function () {
     Route::resource('data-buku', 'Admin\BukuController');
 
     Route::resource('peminjaman', 'Admin\PinjamController');
+    Route::get('/hapus_peminjaman/{id}', 'Admin\PinjamController@destroy');
+    Route::get('/ubah_status/{id}', 'Admin\PinjamController@ubah_status');
+
+    Route::resource('pengembalian', 'Admin\PengembalianController');
+
 
 
 
