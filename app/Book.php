@@ -26,4 +26,8 @@ class Book extends Model
     public function Rak() {
         return $this->hasOne(Rak::class, 'id');
     }
+    public function pinjam()
+    {
+        return $this->hasOne( Pinjam::class, 'buku', 'id' );
+    }
 }

@@ -40,14 +40,14 @@
 
         @elseif (Auth::user()->role == 'siswa')
         <li class="menu-title">Buku</li><!-- /.menu-title -->
-        <li>
-            <a href="widgets.html"> <i class="menu-icon ti-book"></i>Peminjaman Buku </a>
+        <li class="{{ Request::is('siswa/peminjaman') ? 'active' : '' }}">
+            <a href="{{url('siswa/peminjaman')}}"> <i class="menu-icon ti-book"></i>Peminjaman Buku </a>
         </li>
-        <li>
-            <a href="widgets.html"> <i class="menu-icon ti-bookmark-alt"></i>Pengembalian Buku </a>
+        <li class="{{ Request::is('siswa/pengembalian') ? 'active' : '' }}">
+            <a href="{{url('siswa/pengembalian')}}"> <i class="menu-icon ti-bookmark-alt"></i>Pengembalian Buku </a>
         </li>
-        <li>
-            <a href="widgets.html"> <i class="menu-icon ti-clipboard"></i>Laporan Peminjaman </a>
+        <li class="{{ Request::is('siswa/laporan') ? 'active' : '' }}">
+            <a href="{{url('siswa/laporan')}}"> <i class="menu-icon ti-clipboard"></i>Laporan Peminjaman </a>
         </li>
         @endif
     </ul>

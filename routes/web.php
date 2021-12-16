@@ -89,5 +89,8 @@ Route::prefix('admin')->middleware([Admin::class, 'auth'])->group(function () {
 });
 
 Route::prefix('siswa')->middleware([Siswa::class, 'auth'])->group(function () {
+    Route::get('/peminjaman', 'Siswa\PinjamController@index');
+    Route::get('/pengembalian', 'Siswa\PinjamController@create');
+    Route::get('/laporan', 'Siswa\PinjamController@store');
 
 });

@@ -20,4 +20,8 @@ class Pinjam extends Model
     {
         return $this->belongsTo( User::class, 'id_user', 'id' );
     }
+    public function books()
+    {
+        return $this->belongsTo( Book::class, 'buku', 'id' );
+    }
 }
